@@ -1,0 +1,13 @@
+-- Crear base de datos
+CREATE DATABASE IF NOT EXISTS contactosdb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- Usar la base de datos
+USE contactosdb;
+
+-- Crear tabla contactos
+CREATE TABLE IF NOT EXISTS contactos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100),
+    email VARCHAR(100),
+    telefono VARCHAR(20)
+);
